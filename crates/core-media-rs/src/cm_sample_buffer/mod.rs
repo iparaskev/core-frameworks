@@ -6,6 +6,7 @@ pub(crate) mod internal_base;
 pub(crate) mod internal_create;
 pub(crate) mod internal_data;
 pub(crate) mod internal_format_description;
+pub(crate) mod internal_invalidate;
 pub(crate) mod internal_readyness;
 pub(crate) mod internal_sizes;
 
@@ -96,5 +97,8 @@ impl CMSampleBuffer {
     }
     pub fn get_audio_buffer_list(&self) -> Result<RetainedAudioBufferList, CMSampleBufferError> {
         self.internal_get_audio_buffer_list()
+    }
+    pub fn get_is_valid(&self) -> bool {
+        self.internal_is_valid()
     }
 }

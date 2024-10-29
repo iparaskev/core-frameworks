@@ -25,7 +25,7 @@
 ### Invalidating Sample SampleBuffers
 - [ ] CMSampleBufferSetInvalidateHandler
 - [ ] CMSampleBufferInvalidate
-- [ ] CMSampleBufferIsValid
+- [x] CMSampleBufferIsValid
 - [ ] CMSampleBufferSetInvalidateCallback
 
 ### Inspecting size information
